@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# Personal Finance Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application built with React and Material-UI to help you manage your personal finances effectively.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Dashboard
+- Overview of your financial status
+- Monthly income and expense summary
+- Visual charts and graphs for financial trends
+- Quick access to recent transactions
 
-### `npm start`
+### 2. Transaction Management
+- Add, edit, and delete transactions
+- Categorize transactions (Income/Expense)
+- Multiple income categories:
+  - Salary
+  - Freelance
+  - Investments
+  - Other Income
+- Multiple expense categories:
+  - Housing
+  - Food & Dining
+  - Transportation
+  - Utilities
+  - Healthcare
+  - Entertainment
+  - Shopping
+  - Other Expenses
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Budget Management
+- Set monthly budgets by category
+- Track spending against budgets
+- Visual progress indicators
+- Overspending alerts
+- Budget vs. actual spending comparison charts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Financial Goals
+- Set short-term and long-term financial goals
+- Track progress towards goals
+- Set target dates and amounts
+- Visual progress tracking
+- Goal completion celebrations
 
-### `npm test`
+### 5. Data Visualization
+- Interactive charts using Recharts
+- Monthly spending trends
+- Category-wise expense breakdown
+- Budget utilization charts
+- Goal progress tracking
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. Local Storage
+- Persistent data storage using browser's local storage
+- No backend required
+- Privacy-focused (all data stays on your device)
 
-### `npm run build`
+## Technical Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend Framework**: React.js
+- **UI Library**: Material-UI (MUI)
+- **Charts**: Recharts
+- **Routing**: React Router
+- **State Management**: React Hooks
+- **Storage**: Local Storage
+- **Security**: bcryptjs for password hashing
+- **Animations**: Framer Motion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/princesanklecha766-a11y/my-personal-finance-tracker.git
+cd my-personal-finance-tracker
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will open in your default browser at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+my-personal-finance-tracker/
+├── src/
+│   ├── components/         # React components
+│   │   ├── Budget.js
+│   │   ├── BudgetDialog.js
+│   │   ├── Goals.js
+│   │   ├── GoalDialog.js
+│   │   └── ...
+│   ├── utils/             # Utility functions
+│   │   ├── financeManager.js
+│   │   └── storage.js
+│   ├── pages/             # Page components
+│   │   ├── Dashboard.js
+│   │   ├── Login.js
+│   │   └── Signup.js
+│   └── App.js            # Main application component
+├── public/               # Static files
+└── package.json         # Project dependencies
+```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **First Time Setup**:
+   - Create an account using the signup page
+   - Log in with your credentials
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Adding Transactions**:
+   - Click the "Add Transaction" button on the dashboard
+   - Enter transaction details (amount, category, date)
+   - Save the transaction
 
-### Code Splitting
+3. **Managing Budgets**:
+   - Go to the Budget section
+   - Click "Add Budget" to create a new budget
+   - Select category and set monthly limit
+   - Track your spending against the budget
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Setting Goals**:
+   - Navigate to the Goals section
+   - Click "Add Goal" to create a new financial goal
+   - Set target amount and deadline
+   - Monitor your progress
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
